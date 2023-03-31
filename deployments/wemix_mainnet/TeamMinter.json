@@ -1,0 +1,186 @@
+{
+  "address": "0x91DCa2954A7F6c5960C22c144EE1762911682996",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "minter",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "cTokenAddress",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "mintAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "TeamMint",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "admin",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "cErc20Address",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "underlyingTokenAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "mintAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "unredeemableCErc20Mint",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "cEtherAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "mintAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "unredeemableCEtherMint",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ],
+  "transactionHash": "0x72ece90422303034d4bf25dc5bf2e21ef727bb63301e0890020b170b2760554c",
+  "receipt": {
+    "to": null,
+    "from": "0xfFE6B1AE2f853352Bf6db91c49E213966325e491",
+    "contractAddress": "0x91DCa2954A7F6c5960C22c144EE1762911682996",
+    "transactionIndex": 0,
+    "gasUsed": "435157",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xedc22d3a3425573537e4abf486f94dbd1ca6ff776ae36da0ed56c95ab0e4601f",
+    "transactionHash": "0x72ece90422303034d4bf25dc5bf2e21ef727bb63301e0890020b170b2760554c",
+    "logs": [],
+    "blockNumber": 10042556,
+    "cumulativeGasUsed": "435157",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "78881e707d838fbe8e3760579e816eb4",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"minter\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"cTokenAddress\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"mintAmount\",\"type\":\"uint256\"}],\"name\":\"TeamMint\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"admin\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"cErc20Address\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"underlyingTokenAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"mintAmount\",\"type\":\"uint256\"}],\"name\":\"unredeemableCErc20Mint\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"cEtherAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"mintAmount\",\"type\":\"uint256\"}],\"name\":\"unredeemableCEtherMint\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"details\":\"Team should mint small default amount of cTokens from all markets after deployment  resolves audit issue CTL-05\",\"events\":{\"TeamMint(address,address,uint256)\":{\"params\":{\"cTokenAddress\":\"address of cToken minted\",\"mintAmount\":\"deposited amount of underlying asset\",\"minter\":\"address who minted cToken\"}}},\"kind\":\"dev\",\"methods\":{\"unredeemableCErc20Mint(address,address,uint256)\":{\"details\":\"\\ud568\\uc218 \\uc2e4\\ud589 \\uc804 \\uad00\\ub9ac\\uc790\\uac00 \\ud574\\ub2f9 \\ucee8\\ud2b8\\ub799\\ud2b8\\ub85c \\ud1a0\\ud070 \\uc804\\uc1a1 \\ud544\\uc694\",\"params\":{\"cErc20Address\":\": CERC20 \\ucee8\\ud2b8\\ub799 \\uc8fc\\uc18c\",\"mintAmount\":\"\\ud480 \\ucd08\\uae30 \\uace0\\uc815 \\ubb3c\\ub7c9\\uc73c\\ub85c \\uacf5\\uae09\\ud560 underlying token \\uc218\\ub7c9\",\"underlyingTokenAddress\":\": CERC20 \\uc758 underlying token \\uc8fc\\uc18c\"}},\"unredeemableCEtherMint(address,uint256)\":{\"details\":\"\\ud568\\uc218 \\uc2e4\\ud589 \\uc804 \\uad00\\ub9ac\\uc790\\uac00 \\ud574\\ub2f9 \\ucee8\\ud2b8\\ub799\\ud2b8\\ub85c \\ud1a0\\ud070 \\uc804\\uc1a1 \\ud544\\uc694\",\"params\":{\"cEtherAddress\":\"CEther \\ucee8\\ud2b8\\ub799 \\uc8fc\\uc18c\",\"mintAmount\":\"\\ud480 \\ucd08\\uae30 \\uace0\\uc815 \\ubb3c\\ub7c9\\uc73c\\ub85c \\uacf5\\uae09\\ud560 ETH \\uc218\\ub7c9\"}}},\"version\":1},\"userdoc\":{\"events\":{\"TeamMint(address,address,uint256)\":{\"notice\":\"Emitted when cToken is minted by team through this contract\"}},\"kind\":\"user\",\"methods\":{\"admin()\":{\"notice\":\"only address which can mint cToken through this contract\"},\"unredeemableCErc20Mint(address,address,uint256)\":{\"notice\":\"CErc20 \\ud480 \\uace0\\uc815 \\ubb3c\\ub7c9 \\uc138\\ud305\\uc744 \\uc704\\ud55c Mint \\ud568\\uc218mintAmount \\uc774\\uc0c1\\uc758 balance\\uac00 \\uc788\\uc5b4\\uc57c\\ud55c\\ub2e4.\"},\"unredeemableCEtherMint(address,uint256)\":{\"notice\":\"CEther \\ud480 \\uace0\\uc815 \\ubb3c\\ub7c9 \\uc138\\ud305\\uc744 \\uc704\\ud55c Mint \\ud568\\uc218mintAmount \\uc774\\uc0c1\\uc758 balance\\uac00 \\uc788\\uc5b4\\uc57c\\ud55c\\ub2e4.\"}},\"notice\":\"deposit default unredeemable amount of asset in markets\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/lending/TeamMinter.sol\":\"TeamMinter\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"src/lending/IERC20.sol\":{\"content\":\"pragma solidity ^0.8.10;\\n\\ninterface IERC20 {\\n    function decimals() external view returns (uint8);\\n\\n    function symbol() external view returns (string memory);\\n\\n    event Transfer(address indexed from, address indexed to, uint256 value);\\n    event Approval(address indexed owner, address indexed spender, uint256 value);\\n\\n    function totalSupply() external view returns (uint256);\\n\\n    function balanceOf(address account) external view returns (uint256);\\n\\n    function transfer(address recipient, uint256 amount) external returns (bool success);\\n\\n    function transferFrom(\\n        address sender,\\n        address recipient,\\n        uint256 amount\\n    ) external returns (bool success);\\n\\n    function allowance(address owner, address spender) external view returns (uint256);\\n\\n    function approve(address spender, uint256 amount) external returns (bool);\\n}\\n\",\"keccak256\":\"0x01437f74a4d28a45bb9ba963e73a5adcdd09bf095f0289132c5fedc8eaf5c9ed\"},\"src/lending/TeamMinter.sol\":{\"content\":\"pragma solidity ^0.8.11;\\n\\nimport \\\"./IERC20.sol\\\";\\n\\n/// @notice deposit default unredeemable amount of asset in markets\\n/// @dev Team should mint small default amount of cTokens from all markets after deployment\\n///  resolves audit issue CTL-05\\ncontract TeamMinter {\\n    /// @notice Emitted when cToken is minted by team through this contract\\n    /// @param minter address who minted cToken\\n    /// @param cTokenAddress address of cToken minted\\n    /// @param mintAmount deposited amount of underlying asset\\n    event TeamMint(address minter, address cTokenAddress, uint256 mintAmount);\\n\\n    /// @notice only address which can mint cToken through this contract\\n    address public admin;\\n\\n    // Selector for external call\\n    bytes4 private constant CETHER_SELECTOR = bytes4(keccak256(bytes(\\\"mint()\\\")));\\n    bytes4 private constant CERC20_SELECTOR = bytes4(keccak256(bytes(\\\"mint(uint256)\\\")));\\n\\n    constructor() {\\n        admin = msg.sender;\\n    }\\n\\n    receive() external payable {}\\n\\n    /// @notice CEther \\ud480 \\uace0\\uc815 \\ubb3c\\ub7c9 \\uc138\\ud305\\uc744 \\uc704\\ud55c Mint \\ud568\\uc218\\n    /// @notice mintAmount \\uc774\\uc0c1\\uc758 balance\\uac00 \\uc788\\uc5b4\\uc57c\\ud55c\\ub2e4.\\n    /// @dev \\ud568\\uc218 \\uc2e4\\ud589 \\uc804 \\uad00\\ub9ac\\uc790\\uac00 \\ud574\\ub2f9 \\ucee8\\ud2b8\\ub799\\ud2b8\\ub85c \\ud1a0\\ud070 \\uc804\\uc1a1 \\ud544\\uc694\\n    /// @param cEtherAddress CEther \\ucee8\\ud2b8\\ub799 \\uc8fc\\uc18c\\n    /// @param mintAmount \\ud480 \\ucd08\\uae30 \\uace0\\uc815 \\ubb3c\\ub7c9\\uc73c\\ub85c \\uacf5\\uae09\\ud560 ETH \\uc218\\ub7c9\\n    function unredeemableCEtherMint(address cEtherAddress, uint256 mintAmount) external payable {\\n        require(msg.sender == admin, \\\"E1\\\");\\n        require(address(this).balance >= mintAmount, \\\"Balance is not enough\\\");\\n\\n        (bool success, bytes memory data) = cEtherAddress.call{ value: mintAmount }(\\n            abi.encodeWithSelector(CETHER_SELECTOR)\\n        );\\n\\n        require(success && abi.decode(data, (uint256)) == mintAmount, \\\"E120\\\");\\n\\n        emit TeamMint(msg.sender, cEtherAddress, mintAmount);\\n    }\\n\\n    /// @notice CErc20 \\ud480 \\uace0\\uc815 \\ubb3c\\ub7c9 \\uc138\\ud305\\uc744 \\uc704\\ud55c Mint \\ud568\\uc218\\n    /// @notice mintAmount \\uc774\\uc0c1\\uc758 balance\\uac00 \\uc788\\uc5b4\\uc57c\\ud55c\\ub2e4.\\n    /// @dev \\ud568\\uc218 \\uc2e4\\ud589 \\uc804 \\uad00\\ub9ac\\uc790\\uac00 \\ud574\\ub2f9 \\ucee8\\ud2b8\\ub799\\ud2b8\\ub85c \\ud1a0\\ud070 \\uc804\\uc1a1 \\ud544\\uc694\\n    /// @param cErc20Address: CERC20 \\ucee8\\ud2b8\\ub799 \\uc8fc\\uc18c\\n    /// @param underlyingTokenAddress: CERC20 \\uc758 underlying token \\uc8fc\\uc18c\\n    /// @param mintAmount \\ud480 \\ucd08\\uae30 \\uace0\\uc815 \\ubb3c\\ub7c9\\uc73c\\ub85c \\uacf5\\uae09\\ud560 underlying token \\uc218\\ub7c9\\n    function unredeemableCErc20Mint(\\n        address cErc20Address,\\n        address underlyingTokenAddress,\\n        uint256 mintAmount\\n    ) external {\\n        require(msg.sender == admin, \\\"E1\\\");\\n        require(IERC20(underlyingTokenAddress).balanceOf(address(this)) >= mintAmount, \\\"Balance is not enough\\\");\\n\\n        IERC20(underlyingTokenAddress).approve(cErc20Address, mintAmount);\\n\\n        (bool success, bytes memory data) = cErc20Address.call(abi.encodeWithSelector(CERC20_SELECTOR, mintAmount));\\n        require(success && abi.decode(data, (uint256)) == mintAmount, \\\"E120\\\");\\n\\n        emit TeamMint(msg.sender, cErc20Address, mintAmount);\\n    }\\n}\\n\",\"keccak256\":\"0x08a454b4aacfac9c37a62322905304460a76aac759db666093036e428216f2a4\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50600080546001600160a01b03191633179055610681806100326000396000f3fe6080604052600436106100385760003560e01c806389f25a6b146100445780639b5f8ec514610059578063f851a4401461007957600080fd5b3661003f57005b600080fd5b610057610052366004610568565b6100b5565b005b34801561006557600080fd5b50610057610074366004610592565b61028b565b34801561008557600080fd5b50600054610099906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b6000546001600160a01b031633146100f95760405162461bcd60e51b8152602060048201526002602482015261453160f01b60448201526064015b60405180910390fd5b804710156101415760405162461bcd60e51b8152602060048201526015602482015274084c2d8c2dcc6ca40d2e640dcdee840cadcdeeaced605b1b60448201526064016100f0565b60408051808201825260068152656d696e74282960d01b60209182015281516004815260248101835290810180516001600160e01b0316631249c58b60e01b179052905160009182916001600160a01b0386169185916101a191906105ce565b60006040518083038185875af1925050503d80600081146101de576040519150601f19603f3d011682016040523d82523d6000602084013e6101e3565b606091505b5091509150818015610207575082818060200190518101906102059190610609565b145b61023c5760405162461bcd60e51b81526004016100f0906020808252600490820152630453132360e41b604082015260600190565b604080513381526001600160a01b03861660208201529081018490527fe190fb1904cd7af344a146eb3d5e47e1a46cede9a17ba993b1c4c47dfe32d0179060600160405180910390a150505050565b6000546001600160a01b031633146102ca5760405162461bcd60e51b8152602060048201526002602482015261453160f01b60448201526064016100f0565b6040516370a0823160e01b815230600482015281906001600160a01b038416906370a0823190602401602060405180830381865afa158015610310573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906103349190610609565b101561037a5760405162461bcd60e51b8152602060048201526015602482015274084c2d8c2dcc6ca40d2e640dcdee840cadcdeeaced605b1b60448201526064016100f0565b60405163095ea7b360e01b81526001600160a01b0384811660048301526024820183905283169063095ea7b3906044016020604051808303816000875af11580156103c9573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906103ed9190610622565b50604080518082018252600d81526c6d696e742875696e743235362960981b60209182015281516024808201859052835180830390910181526044909101835290810180516001600160e01b031663140e25ad60e31b179052905160009182916001600160a01b03871691610461916105ce565b6000604051808303816000865af19150503d806000811461049e576040519150601f19603f3d011682016040523d82523d6000602084013e6104a3565b606091505b50915091508180156104c7575082818060200190518101906104c59190610609565b145b6104fc5760405162461bcd60e51b81526004016100f0906020808252600490820152630453132360e41b604082015260600190565b604080513381526001600160a01b03871660208201529081018490527fe190fb1904cd7af344a146eb3d5e47e1a46cede9a17ba993b1c4c47dfe32d0179060600160405180910390a15050505050565b80356001600160a01b038116811461056357600080fd5b919050565b6000806040838503121561057b57600080fd5b6105848361054c565b946020939093013593505050565b6000806000606084860312156105a757600080fd5b6105b08461054c565b92506105be6020850161054c565b9150604084013590509250925092565b6000825160005b818110156105ef57602081860181015185830152016105d5565b818111156105fe576000828501525b509190910192915050565b60006020828403121561061b57600080fd5b5051919050565b60006020828403121561063457600080fd5b8151801515811461064457600080fd5b939250505056fea2646970667358221220c14fbf68241e0d30ca08d778de53cfca1f5d53d0f5f73900394087dbefcbf9e064736f6c634300080b0033",
+  "deployedBytecode": "0x6080604052600436106100385760003560e01c806389f25a6b146100445780639b5f8ec514610059578063f851a4401461007957600080fd5b3661003f57005b600080fd5b610057610052366004610568565b6100b5565b005b34801561006557600080fd5b50610057610074366004610592565b61028b565b34801561008557600080fd5b50600054610099906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b6000546001600160a01b031633146100f95760405162461bcd60e51b8152602060048201526002602482015261453160f01b60448201526064015b60405180910390fd5b804710156101415760405162461bcd60e51b8152602060048201526015602482015274084c2d8c2dcc6ca40d2e640dcdee840cadcdeeaced605b1b60448201526064016100f0565b60408051808201825260068152656d696e74282960d01b60209182015281516004815260248101835290810180516001600160e01b0316631249c58b60e01b179052905160009182916001600160a01b0386169185916101a191906105ce565b60006040518083038185875af1925050503d80600081146101de576040519150601f19603f3d011682016040523d82523d6000602084013e6101e3565b606091505b5091509150818015610207575082818060200190518101906102059190610609565b145b61023c5760405162461bcd60e51b81526004016100f0906020808252600490820152630453132360e41b604082015260600190565b604080513381526001600160a01b03861660208201529081018490527fe190fb1904cd7af344a146eb3d5e47e1a46cede9a17ba993b1c4c47dfe32d0179060600160405180910390a150505050565b6000546001600160a01b031633146102ca5760405162461bcd60e51b8152602060048201526002602482015261453160f01b60448201526064016100f0565b6040516370a0823160e01b815230600482015281906001600160a01b038416906370a0823190602401602060405180830381865afa158015610310573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906103349190610609565b101561037a5760405162461bcd60e51b8152602060048201526015602482015274084c2d8c2dcc6ca40d2e640dcdee840cadcdeeaced605b1b60448201526064016100f0565b60405163095ea7b360e01b81526001600160a01b0384811660048301526024820183905283169063095ea7b3906044016020604051808303816000875af11580156103c9573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906103ed9190610622565b50604080518082018252600d81526c6d696e742875696e743235362960981b60209182015281516024808201859052835180830390910181526044909101835290810180516001600160e01b031663140e25ad60e31b179052905160009182916001600160a01b03871691610461916105ce565b6000604051808303816000865af19150503d806000811461049e576040519150601f19603f3d011682016040523d82523d6000602084013e6104a3565b606091505b50915091508180156104c7575082818060200190518101906104c59190610609565b145b6104fc5760405162461bcd60e51b81526004016100f0906020808252600490820152630453132360e41b604082015260600190565b604080513381526001600160a01b03871660208201529081018490527fe190fb1904cd7af344a146eb3d5e47e1a46cede9a17ba993b1c4c47dfe32d0179060600160405180910390a15050505050565b80356001600160a01b038116811461056357600080fd5b919050565b6000806040838503121561057b57600080fd5b6105848361054c565b946020939093013593505050565b6000806000606084860312156105a757600080fd5b6105b08461054c565b92506105be6020850161054c565b9150604084013590509250925092565b6000825160005b818110156105ef57602081860181015185830152016105d5565b818111156105fe576000828501525b509190910192915050565b60006020828403121561061b57600080fd5b5051919050565b60006020828403121561063457600080fd5b8151801515811461064457600080fd5b939250505056fea2646970667358221220c14fbf68241e0d30ca08d778de53cfca1f5d53d0f5f73900394087dbefcbf9e064736f6c634300080b0033",
+  "devdoc": {
+    "details": "Team should mint small default amount of cTokens from all markets after deployment  resolves audit issue CTL-05",
+    "events": {
+      "TeamMint(address,address,uint256)": {
+        "params": {
+          "cTokenAddress": "address of cToken minted",
+          "mintAmount": "deposited amount of underlying asset",
+          "minter": "address who minted cToken"
+        }
+      }
+    },
+    "kind": "dev",
+    "methods": {
+      "unredeemableCErc20Mint(address,address,uint256)": {
+        "details": "함수 실행 전 관리자가 해당 컨트랙트로 토큰 전송 필요",
+        "params": {
+          "cErc20Address": ": CERC20 컨트랙 주소",
+          "mintAmount": "풀 초기 고정 물량으로 공급할 underlying token 수량",
+          "underlyingTokenAddress": ": CERC20 의 underlying token 주소"
+        }
+      },
+      "unredeemableCEtherMint(address,uint256)": {
+        "details": "함수 실행 전 관리자가 해당 컨트랙트로 토큰 전송 필요",
+        "params": {
+          "cEtherAddress": "CEther 컨트랙 주소",
+          "mintAmount": "풀 초기 고정 물량으로 공급할 ETH 수량"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "events": {
+      "TeamMint(address,address,uint256)": {
+        "notice": "Emitted when cToken is minted by team through this contract"
+      }
+    },
+    "kind": "user",
+    "methods": {
+      "admin()": {
+        "notice": "only address which can mint cToken through this contract"
+      },
+      "unredeemableCErc20Mint(address,address,uint256)": {
+        "notice": "CErc20 풀 고정 물량 세팅을 위한 Mint 함수mintAmount 이상의 balance가 있어야한다."
+      },
+      "unredeemableCEtherMint(address,uint256)": {
+        "notice": "CEther 풀 고정 물량 세팅을 위한 Mint 함수mintAmount 이상의 balance가 있어야한다."
+      }
+    },
+    "notice": "deposit default unredeemable amount of asset in markets",
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 12778,
+        "contract": "src/lending/TeamMinter.sol:TeamMinter",
+        "label": "admin",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      }
+    }
+  }
+}
